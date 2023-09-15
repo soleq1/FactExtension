@@ -7,6 +7,7 @@ function App() {
   const [facts,setFacts] = useState([])
   const [settings,SetSettings] = useState(false)
   const [storage,setStorage] = useState([])
+ //Grabs Chrome Local Storage and puts it in State //
   useEffect(() =>{
     chrome.storage.local.get(["Fact"]).then((result) => {
       if (result.Fact){
@@ -18,7 +19,7 @@ function App() {
   },[])
   const fetchFact = async  () =>{
     try{
-
+  //Go to https://api-ninjas.com/profile and put your api-key in the place of the one already there //
       const data = await fetch("https://api.api-ninjas.com/v1/facts?limit=1",{
         headers: { 'X-Api-Key': 'sNG+SqlGGc+0YJOytgvjBA==XoXtHX7c5FZSA6Fk'},
         contentType: 'application/json',
@@ -31,6 +32,7 @@ function App() {
     }
 
   }
+  //Toggle Button //
 const handleSettings = () =>{
   if (settings === true){
     SetSettings(false)
