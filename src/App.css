@@ -1,0 +1,32 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.Container{
+  display:flex;
+  justify-content: center;
+  width:340px;
+}
+
+.Fact-Container{
+  
+  justify-content: center;
+}
+.Button{
+  background:none;
+  border-radius:2px;
+  border:1px solid white;
+}
+.svg-Button{
+  background: none;
+  border:none;
+}
+.stored-Container{
+  margin:2px;
+
+}
+.delete-Button{
+  margin:3px;
+}

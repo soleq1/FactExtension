@@ -1,0 +1,13 @@
+{
+    "name": "Quick Facts",
+    "version": "1.0.0",
+    "permissions":[
+        "storage"
+    ],
+    "description": "random facts",
+    "manifest_version": 3,
+    "author": "test",
+    "action":{
+        "default_popup": "index.html"
+    }
+}
