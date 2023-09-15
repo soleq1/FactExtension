@@ -1,8 +1,31 @@
-# React + Vite
+# React Chrome Extension with Chrome Storage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Simple Facts for the browser as a extension. Allows people to store facts they might want to use later.
 
-Currently, two official plugins are available:
+## Installation
+```bash
+npm install 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm run build 
+```
+
+
+## API & Installation
+Register a Api Key at [https://api-ninjas.com/signin](https://api-ninjas.com/signin)
+```bash
+ headers: { 'X-Api-Key': 'KEY HERE' }
+```
+
+Unpack This into Chrome Extensions
+
+![image](https://github.com/soleq1/FactExtension/assets/103675652/7b1caed7-db8a-4bc3-acff-9d608c004a85)
+
+## Tech Used
+Build Tool: Vite
+
+Language: React
+
+Api Used: [Api Ninja Facts](https://api-ninjas.com/api/facts)
+## License
+
+[MIT](https://github.com/soleq1/FactExtension/blob/main/LICENSE)
